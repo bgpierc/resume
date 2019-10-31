@@ -1,0 +1,90 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plain Cover Letter
+% LaTeX Template
+% Version 1.0 (28/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute 
+% http://www.rpi.edu/dept/arc/training/latex/resumes/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{letter} % Default font size of the document, change to 10pt to fit more text
+
+\usepackage{newcent} % Default font is the New Century Schoolbook PostScript font 
+%\usepackage{helvet} % Uncomment this (while commenting the above line) to use the Helvetica font
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+
+
+% Margins
+\topmargin=-1in % Moves the top of the document 1 inch above the default
+\textheight=8.5in % Total height of the text on the page before text goes on to the next page, this can be increased in a longer letter
+\oddsidemargin=-10pt % Position of the left margin, can be negative or positive if you want more or less room
+\textwidth=6.5in % Total width of the text, increase this if the left margin was decreased and vice-versa
+
+\let\raggedleft\raggedright % Pushes the date (at the top) to the left, comment this line to have the date on the right
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{letter}{Lawrence Livermore National Laboratory \\
+Student Recruitment \\  	
+7000 East Ave \\
+Livermore, CA 94551-0808} 
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME & ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+\large\bf Benjamin Pierce \\ % Your name
+%\vspace{20pt} \hrule height 1pt % If you would like a horizontal line separating the name from the address, uncomment the line to the left of this text
+16678 State Road \\ North Royalton, OH 44133 \\ (614)787-8389 % Your address and phone number
+%bp0017.github.io
+\end{center} 
+\vfill
+\signature{Benjamin Pierce} % Your name for the signature at the bottom
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT SECTION
+%----------------------------------------------------------------------------------------
+
+\opening{To Whom It May Concern} 
+ 
+I am writing in regards to my application to the Data Science Summer Institute student internship program. I recently attended Nuclear Security Enterprise Day at Case Western Reserve University, where I spoke with several helpful representatives who recommended that I apply to this program based on my interests.
+
+I became interested in pursuing a career in research after taking a project-based data science course during my first year at CWRU. Since then, I have worked in a research group out of the Materials Science and Engineering Department at CWRU that specializes on the intersection of degradation science and big data. My particular research has focused on the application of computer vision/image processing techniques. During my time in the group, I have contributed to two projects, one of which was in collaboration with Tohoku University in Japan, the other an extension of previous research conducted by members of the group. More detailed descriptions of each project can be found on my enclosed r\`esum\`e, and posters regarding both topics can be found on my website, \href{bp0017.github.io}{bp0017.github.io}. 
+
+I would like to request an interview at whenever it is convenient for you, either on the phone or in person. My phone number is (614) 787-8389 and e-mail is pierce@case.edu. The quickest way to reach me is typically e-mail. As I know you are very busy, I appreciate your time considering my credentials. I hope to speak with you soon!
+ 
+
+\closing{Sincerely yours,}
+
+
+\encl{r\`esum\`e, academic transcript} % List your enclosed documents here, comment this out to get rid of the "encl:"
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+
+\end{document}
