@@ -1,7 +1,22 @@
 \documentclass[10pt]{article}
     \usepackage[english]{babel}
     \usepackage{lipsum}
+    \usepackage{hyperref}
     \input{config/minimal-resume-config}
+    \hypersetup{hidelinks,
+		backref=true,
+		pagebackref=true,
+		hyperindex=true,
+		breaklinks=true,
+		colorlinks=true,%linkcolor=black,
+		urlcolor=blue,
+		bookmarks=true,
+		bookmarksopen=false,
+		pdftitle={Resume},
+		pdfauthor={Benjamin Pierce}}
+		
+		
+
     \begin{document}
     
 %\usepackage{times}
@@ -10,17 +25,23 @@
 %\setmainfont[Path = fonts/]{Montserrat-Light}
 %\setmonofont{Lucida Sans Typewriter}
 
+
+
+
 \begin{center}
 	% Personal
 	% -----------------------------------------------------
 	{\fontsize{\sizeone}{\sizeone}\fontspec[Path = fonts/,LetterSpace=15]{Montserrat-Regular} Benjamin Pierce}
 	\\
 	\vspace{1mm}
-	{\fontsize{1em}{1em}\fontspec[Path = fonts/]{Montserrat-Light} pierce@case.edu -- (614) 787-8389 -- Cleveland, OH -- bp0017.github.io}
+	{\fontsize{1em}{1em}\fontspec[Path = fonts/]{Montserrat-Light} \href{mailto:pierce@case.edu}{pierce@case.edu} -- (614) 787-8389 -- Cleveland, OH -- \href{http://bp0017.github.io}{bp0017.github.io}}
 \end{center}
 % Chapter: Education
 % ------------------
+\chap{RESEARCH INTERESTS}{
 
+{\fontspec[Path = fonts/]{CrimsonText-SemiBold} Computer Vision \thinspace \thinspace  \thinspace \thinspace Machine Learning \thinspace \thinspace  \thinspace \thinspace Data Science  \thinspace \thinspace  \thinspace \thinspace Distributed Computing}
+}
 \chap{EDUCATION}{
 	
 	\school
@@ -30,11 +51,14 @@
 	{Cleveland, OH}
 	{\begin{newitemize}
 		\item GPA: 3.6
-        \item Coursework: Algorithms, Databases, Data Structures, Intro. Artificial Intelligence
+        \item Coursework: Algorithms, Databases, Data Structures, Intro. Artificial Intelligence, Software Engineering
         \item Minor in Applied Data Science
 		%\item Plan to complete B.S./M.S. program in 5th year
         \end{newitemize}
 	}
+%	{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
+%Research Interests} 
+
 }
 % Chapter: Work Experience
 % ------------------------
@@ -55,9 +79,10 @@
 			\item{Collaborated on a joint project with researchers from Tohoku University, Japan}
 		\end{newitemize}}
 		\item {Objective: Analyze video of rotating, molten droplet of NiAl with the aim of determining a rate of crystallization}
-		\item {Found area of surface of droplet using edge detection and density-based clustering}
-		\item {Accounted for rotation of droplet and backside crystallization} 
-		\item {Confirmed theoretical crystallization type with data-driven model}
+		\item{Analyzed over 100,000 images across 4 samples at varying temperature and composition}
+		\item {Found area of surface of droplet using Canny edge detection and density-based clustering}
+		\item {Accounted for rotation of droplet and backside crystallization through sliding-window estimation} 
+		\item {Confirmed theoretical Avrami crystallization behavior with data-driven model}
 		\end{newitemize}}
 	
 	\
@@ -65,11 +90,12 @@
 	\textit{Feature Extraction and Unsupervised Learning on Electroluminescence Images}
 }	{\begin{newitemize}
 		\item{Faculty: Roger French, Jennifer Braid}
-		\item{Objective: Use unsupervised learning to classify types of degradation of solar modules through electroluminescence images}
-		\item{Took electroluminescence measurements on mini-modules and adjusted data processing step to enable further analysis}
-		%\item{Took electroluminescence images}
-		\item{Extracted local features using keypoint detection and description}
+		\item{Objective: Use unsupervised learning to classify types of degradation of solar modules through electroluminescence images in a dataset of 11,000 images}
+		\item{Experiments: Took electroluminescence measurements on mini-modules and adjusted data processing step to enable further analysis}
+		\item{Extracted local features (blots of corrosion, darkening) using algorithms such as SIFT and KAZE}
+		\item{Found module-level features with Haralick/GLCM features and specialized extraction methods}
 		\item{Modeled local features using bag-of-words model, and applied hierarchical clustering to identify classes}
+		\item{Parallelized operations on HPC cluster with 100Tb of disk, 180 cores, and 2Tb RAM}
 		
 		
 	\end{newitemize}}
@@ -77,11 +103,13 @@
 
 \chap{PUBLICATIONS}
 	{\begin{newitemize}
-		\item{Karimi, Ahmad Maroof, Justin S Fada, Nicholas A Parrilla, {\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} Benjamin Pierce}, Mehmet Koyutürk, Roger H French, and Jennifer L Braid. n.d. “Generalized and Mechanistic PV Module Performance Prediction from Computer Vision and Machine Learning on Electroluminescence Images.” \textit{IEEE Journal of Photovoltaics} , 9.} \textit{Submitted}
+		\item{Karimi, Ahmad Maroof, Justin S Fada, Nicholas A Parrilla, {\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} Benjamin Pierce}, Mehmet Koyutürk, Roger H French, and Jennifer L Braid. “Generalized and Mechanistic PV Module Performance Prediction from Computer Vision and Machine Learning on Electroluminescence Images.” \textit{IEEE Journal of Photovoltaics}, 9.} \textit{Submitted}
 		\item{{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} Pierce, Benjamin}, Ahmad Maroof Karimi, Justin Fada, Nicholas Parrilla, J. L. Braid, Mehmet Koyuturk, and Roger French. 2019. “Feature Extraction/Machine Learning for Degradation Classification of Solar Modules.” Poster, CWRU SOURCE Intersections, August 2.}
-		\item{{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} Pierce, Benjamin}, Ahmad Karimi, Laura Wilson, Andrew Loach, Sonoko Hamaya, Justin Fada, Masayosi Adachi, Hiroyuki Fukuyama, Roger H. French, and J.L.W. Carter. 2019. “Image Processing on Crystallization Growth of Rotating and Levitated Alloys.” Poster, 2019 Tohoku Symposioum, August 5.}
+		\item{{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} Pierce, Benjamin}, Ahmad Karimi, Laura Wilson, Andrew Loach, Sonoko Hamaya, Justin Fada, Masayosi Adachi, Hiroyuki Fukuyama, Roger H. French, and J.L.W. Carter. 2019. “Image Processing on Crystallization Growth of Rotating and Levitated Alloys.” Poster, 2019 CWRU/Tohoku Symposium on Data Science in Life Sciences and Engineering, August 5.}
+		\item{M. Adachi, S. Sonoko, A. Kanbara, L. G. Wilson, {\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold}B. G. Pierce}, A. M. Karimi, R. H. French, J. L. W. Carter, H. Fukuyama, AlN growth behavior on Ni-Al liquid solutions, (2019). http://www.ioffe.ru/iwumd4/invitedspeakers.html}
 	\end{newitemize}}
-%	\newpage
+	
+%	add that one Russia talk
 \chap{PROJECTS}
 	{\begin{newitemize}
 		\item{Web-scraping online sports databases to track and predict player growth from the NCAA to the NBA}
@@ -147,11 +175,11 @@ Libraries}
 
 {\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
 Databases} 
-\hspace*{0pt}\hfill HBase, MySQL
+\hspace*{0pt}\hfill Hadoop2/Hbase, MySQL
 
 {\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
 Other} 
-\hspace*{0pt}\hfill High-performance computing, \LaTeX, Jira
+\hspace*{0pt}\hfill High-performance computing, \LaTeX, Jira, Kanban, Git, vim
 }
 
 \chap{ACTIVITIES}{
