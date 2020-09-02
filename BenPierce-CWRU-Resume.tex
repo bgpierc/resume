@@ -31,7 +31,7 @@
 \begin{center}
 	% Personal
 	% -----------------------------------------------------
-	{\fontsize{\sizeone}{\sizeone}\fontspec[Path = fonts/,LetterSpace=15]{Montserrat-Regular} Benjamin Pierce}
+	{\fontsize{\sizeone}{\sizeone}\fontspec[Path = fonts/]{Montserrat-Regular} Benjamin G. Pierce}
 	\\
 	\vspace{1mm}
 	{\fontsize{1em}{1em}\fontspec[Path = fonts/]{Montserrat-Light} \href{mailto:pierce@case.edu}{pierce@case.edu} -- (614) 787-8389 -- Cleveland, OH -- \href{http://bp0017.github.io}{bp0017.github.io}}
@@ -40,20 +40,20 @@
 % ------------------
 \chap{RESEARCH INTERESTS}{
 
-{\fontspec[Path = fonts/]{CrimsonText-SemiBold} Computer Vision \thinspace \thinspace  \thinspace \thinspace Machine Learning \thinspace \thinspace  \thinspace \thinspace Data Science  \thinspace \thinspace  \thinspace \thinspace Distributed Computing}
+{\fontspec[Path = fonts/]{CrimsonText-SemiBold} Computer Vision \thinspace \thinspace  \thinspace \thinspace Machine Learning \thinspace \thinspace  \thinspace \thinspace Photovoltaics  \thinspace \thinspace  \thinspace \thinspace Distributed Computing}
 }
 \chap{EDUCATION}{
 	
 	\school
 	{Case Western Reserve University}
-	{Aug 2017 – Expected May 2021}
-	{B.S. Computer Science}
+	{Aug 2017 – Expected May 2021/2022}
+	{B.S. Computer Science/ M.S. Computer Science}
 	{Cleveland, OH}
 	{\begin{newitemize}
 		\item GPA: 3.6
         \item Coursework: Algorithms, Databases, Data Structures, Intro. Artificial Intelligence, Software Engineering
-        \item Minor in Applied Data Science
-		%\item Plan to complete B.S./M.S. program in 5th year
+        %\item Minor in Applied Data Science
+		\item Dual Degree Program- B.S./M.S. completed simultaneously
         \end{newitemize}
 	}
 %	{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
@@ -64,6 +64,24 @@
 % ------------------------
 \chap{EXPERIENCE}{
 	
+	\job
+	{Sandia National Laboratories}
+	{May 2020 – Present}
+	{R\&D Intern- Photovoltaic Systems Evaluation Laboratory}	
+	{Albuquerque, NM}
+	\
+	
+	\textit{Improving Single Axis Tracking Algorithms Using Sky Imagery and Machine Learning}
+	{\begin{newitemize}
+	\item Supervisors: Joshua Stein, Jennifer Braid, Daniel Riley
+	\item Objective: Improve energy yield of single axis trackers via a new, machine learning based control algorithm that takes sky images as input.
+	\item Cleaned data set of over 100K images (months of 1 minute interval data) in Sandia HPC enviroment
+	\item Created novel multi-input convolutional neural network to find angle of maximal irradiance.
+	\item Model gives a mean absolute percent error of under 5\% on most days
+	\end{newitemize}}
+
+
+\vspace{0.25cm}
 	\job
 	{Solar Durability and Lifetime Extension Center}
 	{Aug 2018 – Present}
@@ -80,8 +98,8 @@
 		\end{newitemize}}
 		\item {Objective: Analyze video of rotating, molten droplet of NiAl with the aim of determining a rate of crystallization}
 		\item{Analyzed over 100,000 images across 4 samples at varying temperature and composition}
-		\item {Found area of surface of droplet using Canny edge detection and density-based clustering}
-		\item {Accounted for rotation of droplet and backside crystallization through sliding-window estimation} 
+		%\item {Found area of surface of droplet using Canny edge detection and density-based clustering}
+		%\item {Accounted for rotation of droplet and backside crystallization through sliding-window estimation} 
 		\item {Confirmed theoretical Avrami crystallization behavior with data-driven model}
 		\end{newitemize}}
 	
@@ -95,24 +113,25 @@
 		\item{Extracted local features (blots of corrosion, darkening) using algorithms such as SIFT and KAZE}
 		\item{Found module-level features with Haralick/GLCM features and specialized extraction methods}
 		\item{Modeled local features using bag-of-words model, and applied hierarchical clustering to identify classes}
-		\item{Parallelized operations on HPC cluster with 100Tb of disk, 180 cores, and 2Tb RAM}
+		%\item{Parallelized operations on HPC cluster with 100Tb of disk, 180 cores, and 2Tb RAM}
 		
 		
 	\end{newitemize}}
 
-
 \chap{PUBLICATIONS}
 	{\begin{newitemize}
-		\item{Karimi, Ahmad Maroof, Justin S Fada, Nicholas A Parrilla, {\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} Benjamin Pierce}, Mehmet Koyutürk, Roger H French, and Jennifer L Braid. “Generalized and Mechanistic PV Module Performance Prediction from Computer Vision and Machine Learning on Electroluminescence Images.” \textit{IEEE Journal of Photovoltaics}, 9.} \textit{Submitted}
-		\item{{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} Pierce, Benjamin}, Ahmad Maroof Karimi, Justin Fada, Nicholas Parrilla, J. L. Braid, Mehmet Koyuturk, and Roger French. 2019. “Feature Extraction/Machine Learning for Degradation Classification of Solar Modules.” Poster, CWRU SOURCE Intersections, August 2.}
-		\item{{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} Pierce, Benjamin}, Ahmad Karimi, Laura Wilson, Andrew Loach, Sonoko Hamaya, Justin Fada, Masayosi Adachi, Hiroyuki Fukuyama, Roger H. French, and J.L.W. Carter. 2019. “Image Processing on Crystallization Growth of Rotating and Levitated Alloys.” Poster, 2019 CWRU/Tohoku Symposium on Data Science in Life Sciences and Engineering, August 5.}
-		\item{M. Adachi, S. Sonoko, A. Kanbara, L. G. Wilson, {\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold}B. G. Pierce}, A. M. Karimi, R. H. French, J. L. W. Carter, H. Fukuyama, AlN growth behavior on Ni-Al liquid solutions, (2019). http://www.ioffe.ru/iwumd4/invitedspeakers.html}
+		\item{{\fontspec[Path = fonts/]{CrimsonText-SemiBold} Benjamin G Pierce}, Ahmad Maroof Karimi, Jiqi Liu, Roger H French, and Jennifer L Braid. "Identifying Degradation Modes  of Photovoltaic Modules Using Unsupervised Machine Learning on Electroluminescence Images" \textit{IEEE Photovoltaics Specialists Conference 2020}}
+		\item{Carolina M. Whitaker, {\fontspec[Path = fonts/]{CrimsonText-SemiBold} Benjamin G Pierce}, Ahmad Maroof Karimi, Roger H French, and Jennifer L Braid. "PV Cell Cracks and Impacts on Electrical Performance" \textit{IEEE Photovoltaics Specialists Conference 2020}}
+		\item{Ahmad Maroof Karimi, Justin S Fada, Nicholas A Parrilla, {\fontspec[Path = fonts/]{CrimsonText-SemiBold} Benjamin G Pierce}, Mehmet Koyutürk, Roger H French, and Jennifer L Braid. “Generalized and Mechanistic PV Module Performance Prediction from Computer Vision and Machine Learning on Electroluminescence Images.” \textit{IEEE Journal of Photovoltaics} }
+		%\item{{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} Pierce, Benjamin}, Ahmad Maroof Karimi, Justin Fada, Nicholas Parrilla, J. L. Braid, Mehmet Koyuturk, and Roger French. 2019. “Feature Extraction/Machine Learning for Degradation Classification of Solar Modules.” Poster, CWRU SOURCE Intersections, August 2.}
+		\item{{\fontspec[Path = fonts/]{CrimsonText-SemiBold} Benjamin Pierce}, Ahmad Karimi, Laura Wilson, Andrew Loach, Sonoko Hamaya, Justin Fada, Masayosi Adachi, Hiroyuki Fukuyama, Roger H. French, and J.L.W. Carter. 2019. “Image Processing on Crystallization Growth of Rotating and Levitated Alloys.” Poster, 2019 CWRU/Tohoku Symposium on Data Science in Life Sciences and Engineering, August 5.}
+		%\item{M. Adachi, S. Sonoko, A. Kanbara, L. G. Wilson, {\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold}B. G. Pierce}, A. M. Karimi, R. H. French, J. L. W. Carter, H. Fukuyama, AlN growth behavior on Ni-Al liquid solutions, (2019). http://www.ioffe.ru/iwumd4/invitedspeakers.html}
 	\end{newitemize}}
 	
 %	add that one Russia talk
 \chap{PROJECTS}
 	{\begin{newitemize}
-		\item{Web-scraping online sports databases to track and predict player growth from the NCAA to the NBA}
+		\item{Web-scraping online sports databases to track and predict player growth from the NCAA to the NBA, published on data.world}
 		\item{Web marketplace with Flask frontend using MySQL backend}
 		\item{Peer-to-peer local area network IDE for Python}
 		\item{Raspberry Pi based handheld license plate identification device}
@@ -121,8 +140,16 @@
 
 
 \chap{AWARDS} {
+	
+{\fontspec[Path = fonts/]{CrimsonText-SemiBold} 
+	DOE Science Undergraduate Laboratory Internships (SULI)} 
+\hspace*{0pt}\hfill Lawrence Berkeley National Lab
 
-{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
+Offered SULI funding for Summer 2020, declined for Sandia \hspace*{0pt}\hfill May 2020
+
+\
+
+{\fontspec[Path = fonts/]{CrimsonText-SemiBold} 
 SURES Scholar} 
 \hspace*{0pt}\hfill CWRU SOURCE 
 
@@ -130,7 +157,7 @@ Awarded grant funding for summer research \hspace*{0pt}\hfill May 2019
 
 \
 
-{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
+{\fontspec[Path = fonts/]{CrimsonText-SemiBold} 
 Choose Ohio First Awardee- Data Science Cohort} 
 \hspace*{0pt}\hfill State of Ohio
 
@@ -138,11 +165,11 @@ Recognized for STEM skills and awarded scholarship for education in data science
 
 \
 
-{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
-Dean\textquotesingle{}s High Honors} 
-\hspace*{0pt}\hfill CWRU
+%{\fontspec[Path = fonts/]{CrimsonText-SemiBold} 
+%Dean\textquotesingle{}s High Honors} 
+%\hspace*{0pt}\hfill CWRU
 
-Made Dean\textquotesingle{}s list for academic success\hspace*{0pt}\hfill Aug 2017-
+%Made Dean\textquotesingle{}s list for academic success\hspace*{0pt}\hfill Aug 2017-
 
 		%	\award
 		%	{SURES Scholar}
@@ -165,34 +192,38 @@ Made Dean\textquotesingle{}s list for academic success\hspace*{0pt}\hfill Aug 20
 	}
 \chap{TECHNOLOGIES}{
 
-{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
+{\fontspec[Path = fonts/]{CrimsonText-SemiBold} 
 Programming Languages} 
 \hspace*{0pt}\hfill Python, R, Java, C, bash
 
-{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
+{\fontspec[Path = fonts/]{CrimsonText-SemiBold} 
 Libraries} 
-\hspace*{0pt}\hfill NumPy, sklearn, scipy, openCV, pandas
+\hspace*{0pt}\hfill Tensorflow/Keras, NumPy, sklearn, scipy, openCV, pandas
 
-{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
+{\fontspec[Path = fonts/]{CrimsonText-SemiBold} 
 Databases} 
 \hspace*{0pt}\hfill Hadoop2/Hbase, MySQL
 
-{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
+{\fontspec[Path = fonts/]{CrimsonText-SemiBold} 
 Other} 
 \hspace*{0pt}\hfill High-performance computing, \LaTeX, Jira, Kanban, Git, vim
 }
 
 \chap{ACTIVITIES}{
 
-{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
+{\fontspec[Path = fonts/]{CrimsonText-SemiBold} 
 Association for Computing Machinery} 
-\hspace*{0pt}\hfill Member, 2019
+\hspace*{0pt}\hfill Student Member, 2019
 
-{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
-CWRU Hacker Society} 
-\hspace*{0pt}\hfill Member, 2017-Current
+{\fontspec[Path = fonts/]{CrimsonText-SemiBold} 
+	Institute of Electrical and Electronics Engineers} 
+\hspace*{0pt}\hfill Student Member, 2020
 
-{\fontspec[Path = fonts/,LetterSpace=10]{CrimsonText-SemiBold} 
+%{\fontspec[Path = fonts/]{CrimsonText-SemiBold} 
+%CWRU Hacker Society} 
+%\hspace*{0pt}\hfill Member, 2017-Current
+
+{\fontspec[Path = fonts/]{CrimsonText-SemiBold} 
 Study Abroad} 
 \hspace*{0pt}\hfill  Cape Town, South Africa, Summer 2018
 
